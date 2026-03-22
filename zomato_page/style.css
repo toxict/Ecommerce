@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.header_part{
+    background: url('../square_zomato_logo_new.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+}
+
+.header{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.header a{
+    color: white;
+}
+
+.nav_bar_menu{
+    display: flex;
+    gap: 20px;
+}
+
+.nav_bar_menu .user_icon{
+    display : flex;
+    height : 25px;
+    width : 25px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: 1px solid white;
+
+}
+
+
+
+.search_part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(60vh - 60px);
+    gap : 200px;
+
+}
+
+.zomato_logo{
+    height: 100px;
+    width: 150px;
+}
+
+.search_bar_part{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 50%;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.location_bar , .search_bar{
+    border: none;
+    outline: none;
+}
+
+.location_bar{
+    width: 35%;
+    border-right: 3px solid black;
+}
+
+.search_bar{
+    width: 65%;
+}
+
+
+.img_section{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.parent_container{
+    display: flex;
+    gap: 20px;
+}
+
+.img_container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+.img_container img{
+    height: 200px;
+    width: 200px;
+}
+
+.img_container:hover{
+    transform: scale(1.1);
+}
+
+.img_container h2{
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 600px){
+    .nav_bar_menu .user_icon{
+        display: flex;
+    }
+    .nav_bar_menu .link_part{
+        display: none;
+    }
+
+    .search_part{
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .search_bar_part{
+        width: 80%;
+        gap: 10px;
+    }
+
+    .location_bar{
+        width: 100%;
+        border-right: 3px solid black;
+    }
+
+    .search_bar{
+        width: 100%;
+    }
+
+    .zomato_logo{
+        height: 50px;
+        width: 75px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 872px){
+    .parent_container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
