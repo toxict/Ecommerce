@@ -1,14 +1,176 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <!-- head content -->
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon"
+    href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Zomato_logo.png/220px-Zomato_logo.png" />
+  <!-- font awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- poppins font by google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+    <title>Zomato page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- other content -->
-    <footer>
-        <!-- footer content -->
-        <img src="../zomatologo.jpg" alt="">
-        
+    <section class = "header_part">
+        <header>
+            <nav class = "header">
+                <a href="#">get the app</a>
+                <div class =  "nav_bar_menu">
+                    <a href="#" class = "link_part">investor relations</a>
+                    <a href="#" class = "link_part">add restaurant</a>
+                    <a href="#" class = "link_part">log in</a>
+                    <a href="#" class = "link_part">sign up</a>
+                    <a href="#" class = "user_icon"><i class="fa-solid fa-user"></i></a>
+                </div>           
+            </nav>   
+        </header>
+        <div class = "search_part">
+            
+            <div class = "search_bar_part">
+                <input type="text" placeholder="Location" class = "location_bar">
+                <input type="text" placeholder="Search for restaurant, cuisine or a dish" class = "search_bar">
+                
+            </div>
+        </div>   
+    </section>
+    <section class = "img_section">  
+        <div class = "parent_container">
+            <div class = "img_container">
+                <img src="../img1.jpg" alt="img 1">
+                <h2>Italian</h2>
+            </div>
+            <div class = "img_container">
+                <img src="../img2.jpg" alt="img 2">
+                <h2>Chinese</h2>
+            </div>
+            <div class = "img_container">
+                <img src="../img3.jpg" alt="img 3">
+                <h2>Indian</h2>
+            </div>
+            <div class = "img_container">
+                <img src="../img4.jpg" alt="img 4">
+                <h2>Fast Food</h2>
+            </div>
+
+        </div>
+    </section>
+    <section class = "Section_3">
+        <div class = "part1">
+            <h1>Collection</h1>
+            <div class="second_part">
+                <span>Discover the best places to eat around you</span>
+                <span>view here below</span>    
+            </div>
+        </div>
+
+        <div class = "card_part">
+        <div class = "card1">
+            <div class = "overlay"></div>
+            <div class = "part1">
+                <h2 class="part1_ele">Live Music</h2>
+                <span class="part1_ele">23 places</span>
+            </div>
+        </div>
+        <div class = "card2">
+            <div class = "overlay"></div>
+            <div class = "part1">
+                <h2>Fine Dining</h2>
+                <span>23 places</span>
+            </div>
+        </div>
+        <div class = "card3">
+            <div class = "overlay"></div>
+            <div class = "part1">
+                <h2>Street Food</h2>
+                <span>23 places</span>
+            </div>
+        </div>
+        <div class = "card4">
+            <div class = "overlay"></div>
+            <div class = "part1">
+                <h2>Cafe</h2>
+                <span>23 places</span>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="container middle_part">
+        <div class = "semi-container">
+            <div class = "image_part">
+                <img src="../app_image.webp" alt="app_image">
+            </div>
+            <div class = "email_part">
+                <h1>Get the App</h1>
+                <p>We'll send you a link, open it on your phone to download the app</p>
+                <input type="radio" name="contact" id="email" checked>
+                <input type="radio" name="contact" id="phone">
+                
+                <div class = "radio_options">
+                    <label for="email" class="email_label">Email</label>     
+                    <label for="phone" class="phone_label">Phone</label>   
+                </div>
+                
+                <div class = "input_container">
+                    <div class = "email_input_part">
+                        <input type="text" placeholder="Email">
+                        <button>Share App Link</button>
+                    </div>
+                    <div class = "phone_input_part">
+                        <div class="phone_wrapper">
+                            <span>+91</span>
+                            <input type="text" placeholder="Phone">
+                        </div>
+                        <button>Share App Link</button>
+                    </div>
+                </div>
+
+                <p class="download_label">Download app from</p>
+                <div class = "app_store_part">
+                    <img src="../app_store.png" alt="app_store">
+                    <img src="../google_play.png" alt="google_play">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <footer class = "Fotter_part">
+        <div class = "main_fotter_part">
+            <div class = "logo_part">
+                <img src="../zoma_;ogo.jpg" alt="">
+            </div>
+            <div class = "nav_part">
+                <div class = "part1">
+                    <h4>About us</h4>
+                    <a href="#">Blog</a>
+                    <a href="#">Work with us</a>
+                    <a href="#">Investor Relations</a>
+                    <a href="#">Report a bug</a>
+                </div>
+                <div class = "part2">
+                    <h4>Restaurants</h4>
+                    <a href="#">Add Restaurant</a>
+                    <a href="#">Zomato for Business</a>
+                    <a href="#">Partner with us</a>
+                    <a href="#">Apps for you</a>
+                </div>
+                <div class = "part3">
+                    <h4>For Foodies</h4>
+                    <a href="#">Blog</a>
+                    <a href="#">Work with us</a>
+                    <a href="#">Investor Relations</a>
+                    <a href="#">Report a bug</a>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
