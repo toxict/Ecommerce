@@ -51,34 +51,35 @@ body{
     align-items: center;
     justify-content: center;
     height: calc(60vh - 60px);
-    gap : 200px;
+    gap : 100px;
+    padding-top : 250px;
 
 }
 
-.zomato_logo{
-    height: 100px;
-    width: 150px;
-}
+
 
 .search_bar_part{
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 0px;
     width: 50%;
     border-radius: 10px;
     gap: 10px;
+    height: 30px;
 }
 
 .location_bar , .search_bar{
     border: none;
     outline: none;
+    
 }
 
 .location_bar{
     width: 35%;
     border-right: 3px solid black;
+    padding-left: 10px;
 }
 
 .search_bar{
@@ -117,12 +118,402 @@ body{
 }
 
 .img_container:hover{
-    transform: scale(1.1);
+    transform: translateY(-5px);
 }
 
 .img_container h2{
     text-align: center;
 }
+
+
+
+.Section_3{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.Section_3 > .part1{
+    background-color: rgb(245, 14, 14);
+    background: linear-gradient(to bottom, rgb(135, 127, 127), rgb(241, 239, 239));
+}
+.Section_3 h1{
+    font-size: 50px;
+    font-weight: 800;
+    color: rgb(5, 32, 40);
+}
+.second_part{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.second_part span:nth-child(1){
+    font-size: 25px;
+    font-weight: 400;
+    color: rgb(3, 24, 31);
+    padding-left: 10px; 
+}
+
+.second_part span:nth-child(2){
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(7, 5, 23);
+    padding-right   : 10px;
+}
+
+.card_part{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 20px;
+    min-width: 50vw; 
+    position: relative;
+}
+
+.card1, .card2, .card3, .card4 {
+    position: relative;
+    height: 300px;
+    width: 260px; /* Adjusted width for better fit in flex */
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover {
+    transform: translateY(-5px);
+}
+
+.card1{
+    background-image: url('../live_img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card2{
+    background-image: url('../fine_dining.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card3{
+    background-image: url('../street_food.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card4{
+    background-image: url('../cafe.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card_part .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.8) 100%);
+    z-index: 1;
+}
+
+.card_part .part1 {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    background: transparent !important; /* Ensure it doesn't inherit background from parent part1 styles */
+}
+
+.card_part .part1 h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.card_part .part1 span {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+
+/* Get the App Section */
+.middle_part {
+    background-color: #fffbf7;
+    margin: 80px 0;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.middle_part .semi-container {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.middle_part .image_part {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.middle_part .image_part img {
+    width: 80%;
+    max-width: 400px;
+    object-fit: contain;
+}
+
+.middle_part .email_part {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.email_part h1 {
+    font-size: 44px;
+    font-weight: 600;
+    color: #1c1c1c;
+}
+
+.email_part > p {
+    font-size: 16px;
+    color: #4f4f4f;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Hide actual radio buttons but keep them for logic */
+.email_part > input[type="radio"] {
+    display: none;
+}
+
+.radio_options {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+.radio_options label {
+    font-size: 18px;
+    color: #1c1c1c;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Custom Radio Dot Style */
+.radio_options label::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid #9c9c9c;
+    background: white;
+}
+
+/* Show/Hide Logic with Sibling Selectors */
+.input_container .email_input_part,
+.input_container .phone_input_part {
+    display: none;
+}
+
+#email:checked ~ .input_container .email_input_part {
+    display: flex;
+}
+
+#phone:checked ~ .input_container .phone_input_part {
+    display: flex;
+}
+
+/* Selected Radio Styling */
+#email:checked ~ .radio_options .email_label::before,
+#phone:checked ~ .radio_options .phone_label::before {
+    border: 5px solid #ef4f5f;
+    background: white;
+}
+
+.input_container {
+    width: 100%;
+}
+
+.input_container input[type="text"] {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #cfcfcf;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+.input_container button {
+    background-color: #ef4f5f;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    white-space: nowrap;
+}
+
+.input_container button:hover {
+    background-color: #d13d4b;
+}
+
+.phone_wrapper {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    border: 1px solid #cfcfcf;
+    border-radius: 8px;
+    padding: 0 10px;
+    background: white;
+}
+
+.phone_wrapper span {
+    color: #1c1c1c;
+    padding-right: 10px;
+    border-right: 1px solid #cfcfcf;
+    font-size: 16px;
+}
+
+.phone_wrapper input {
+    border: none !important;
+    padding: 12px !important;
+}
+
+.download_label {
+    font-size: 14px;
+    color: #9c9c9c;
+    margin-top: 10px;
+}
+
+.app_store_part {
+    display: flex;
+    gap: 15px;
+}
+
+.app_store_part img {
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.app_store_part img:hover {
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 900px) {
+    .middle_part .semi-container {
+        width: 90%;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        flex: 1;
+    }
+    
+    
+    .middle_part .image_part img {
+        width: 80%;
+    }
+
+    .radio_options {
+        justify-content: center;
+    }
+
+    .input_container .email_input_part,
+    .input_container .phone_input_part {
+        flex-direction: column;
+    }
+}
+
+.Fotter_part {
+    background-color: #f8f8f8;
+    padding: 60px 20px;
+    margin-top: 50px;
+}
+
+.main_fotter_part {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.logo_part {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+}
+
+.logo_part img {
+    height: 30px;
+    /* object-fit: contain; */
+}
+
+.nav_part {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.nav_part .part1, .nav_part .part2, .nav_part .part3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav_part h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #1c1c1c;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav_part a {
+    text-decoration: none;
+    color: #696969;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.nav_part a:hover {
+    color: #ef4f5f;
+}
+
+
+
+
+
+
+
+
+
 
 
 @media only screen and (max-width: 600px){
